@@ -33,7 +33,7 @@
                         </ul>
                     </li>
                     <li>
-                        <!--                        <a href="--><?php //echo site_url('user') ?><!--" class="">-->
+                        
                         <i class="material-icons">account_circle</i>
                         <?php
                         if ($this->session->userdata('logged')) {
@@ -48,18 +48,11 @@
 
 
                         ?>
-                        <!--                        </a>-->
+                        
                     </li>
-                    <!--                    <li>-->
-                    <!--                        <a href="-->
-                    <?php //echo site_url('login') ?><!--" id="log_in_btn" class="btn btn-twitter">-->
-                    <!--                            Log in-->
-                    <!--                            <!--									<p class="hidden-lg hidden-md">Profile</p>-->
-                    <!--                        </a>-->
-                    <!--                    </li>-->
+                   
                 </ul>
-                <!--                --><?php //if($this->session->userdata('version') == 'Student'){echo 'pointer-events:none;';}?>
-
+        
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group is-empty dropdown" style="">
                         <input type="text" class="form-control dropdown-toggle" id="search" data-toggle="dropdown"
@@ -158,122 +151,41 @@
                                                         <div class="col-md-1">
 
                                                         </div>
-                                                        <!--<select class="dropdown-header dropdown col-md-3"
-                                                                id="subject_select">
-                                                            <option disabled selected hidden>Select subject</option>
-                                                        </select>-->
                                                         
-                                                        <!--<div class="col-md-1"></div>-->
                                                         <button class=" btn btn-success btn-sm col-md-3" id="viewBtn">View
+                                                        </button>
+                                                        <button class=" btn btn-dark btn-sm col-md-3" data-toggle="modal" data-target="#exampleModalCenter" id="editBtn">Edit
                                                         </button>
 
                                                     </div>
                                                 </td>
-                                                <!--                                            <td class="td-actions text-right">-->
-                                                <!--                                                <button type="button" rel="tooltip" title="Edit Task"-->
-                                                <!--                                                        class="btn btn-primary btn-simple btn-xs">-->
-                                                <!--                                                    <i class="material-icons">edit</i>-->
-                                                <!--                                                </button>-->
-                                                <!--                                                <button type="button" rel="tooltip" title="Remove"-->
-                                                <!--                                                        class="btn btn-danger btn-simple btn-xs">-->
-                                                <!--                                                    <i class="material-icons">close</i>-->
-                                                <!--                                                </button>-->
-                                                <!--                                            </td>-->
+                                                
                                             </tr>
-                                            <!--                                        <tr>-->
-                                            <!--                                            <td>-->
-                                            <!--                                                <div class="checkbox">-->
-                                            <!--                                                    <label>-->
-                                            <!--                                                        <input type="checkbox" name="optionsCheckboxes">-->
-                                            <!--                                                    </label>-->
-                                            <!--                                                </div>-->
-                                            <!--                                            </td>-->
-                                            <!--                                            <td></td>-->
-                                            <!--                                            <td class="td-actions text-right">-->
-                                            <!--                                                <button type="button" rel="tooltip" title="Edit Task"-->
-                                            <!--                                                        class="btn btn-primary btn-simple btn-xs">-->
-                                            <!--                                                    <i class="material-icons">edit</i>-->
-                                            <!--                                                </button>-->
-                                            <!--                                                <button type="button" rel="tooltip" title="Remove"-->
-                                            <!--                                                        class="btn btn-danger btn-simple btn-xs">-->
-                                            <!--                                                    <i class="material-icons">close</i>-->
-                                            <!--                                                </button>-->
-                                            <!--                                            </td>-->
-                                            <!--                                        </tr>-->
+                                            
                                             </tbody>
                                         </table>
                                     </div>
-                                    <!--<div class="tab-pane" id="settings">
-                                        <table class="table">
-                                            <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            <input type="checkbox" name="optionsCheckboxes">
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                                                <td class="td-actions text-right">
-                                                    <button type="button" rel="tooltip" title="Edit Task"
-                                                            class="btn btn-primary btn-simple btn-xs">
-                                                        <i class="material-icons">edit</i>
-                                                    </button>
-                                                    <button type="button" rel="tooltip" title="Remove"
-                                                            class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="material-icons">close</i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            <!--                                                        <input type="checkbox" name="optionsCheckboxes" checked>-->
-                                                        <!--</label>
-                                                    </div>
-                                                </td>
-                                                <td>Flooded: One year later, assessing what was lost and what was found when
-                                                    a ravaging rain swept through metro Detroit
-                                                </td>
-                                                <td class="td-actions text-right">
-                                                    <button type="button" rel="tooltip" title="Edit Task"
-                                                            class="btn btn-primary btn-simple btn-xs">
-                                                        <i class="material-icons">edit</i>
-                                                    </button>
-                                                    <button type="button" rel="tooltip" title="Remove"
-                                                            class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="material-icons">close</i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </div> -->
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+            
+           
+            
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header card-chart" data-background-color="green">
-                            <!--                            <div class="ct-chart" id="dailySalesChart"></div>-->
+                            
                             <div id="rank_in_class"></div>
                         </div>
                         <div class="card-content">
                             <h4 class="title"></h4>
-                            <!--                            <p class="category">  <span class="text-success"> 50 </span> students </p>-->
+                            
                         </div>
-                        <!--<div class="card-footer">
-                            <div class="stats">
-                                <i class="material-icons">access_time</i> updated 4 minutes ago
-                            </div>
-                        </div>-->
+                        
                     </div>
                 </div>
 
@@ -286,11 +198,7 @@
                             <h4 class="title"></h4>
                             <p class="category"></p>
                         </div>
-                        <!--<div class="card-footer">
-                            <div class="stats">
-                                <i class="material-icons">access_time</i> campaign sent 2 days ago
-                            </div>
-                        </div>-->
+                        
 
                     </div>
                 </div>
@@ -404,40 +312,141 @@
         </div>
     </div>
 
-<!--    <footer class="footer">
-        <div class="container-fluid">
-            <nav class="pull-left">
-                <ul>
-                    <li>
-                        <a href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Company
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Portfolio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Blog
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!--<p class="copyright pull-right">
-                &copy;
-                <script>document.write(new Date().getFullYear())</script>
-                <a href="">SGM System</a>, made with love for a better monitoring
-            </p>-->
         </div>
-    </footer>-->
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLongTitle">Edit Student Marks</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-6">
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="selectGrade">Grade</label>
+                                </div>
+                                <select class="custom-select" id="selectGrade">
+                                    <option selected>Choose...</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+                            </div>
+                        </div> <!-- one col ends -->
+
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="selectClass">class</label>
+                                </div>
+                                <select class="custom-select" id="selectClass">
+                                    <option selected>Choose...</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                </select>
+                            </div>
+                        </div> <!-- one col ends -->
+
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="selectTerm">term</label>
+                                </div>
+                                <select class="custom-select" id="selectTerm">
+                                    <option selected>Choose...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="2">3</option>
+                                </select>
+                            </div>
+                        </div> <!-- one col ends -->
+                        
+                    </div>
+
+                    <div class="row">
+                    <button type="button" class="btn btn-info btn-block" id="btn-search-edit">search</button>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="Sinhala_input">sinhala</label>
+                                <input type="text" class="form-control" id="Sinhala_input">   
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="Maths_input">maths</label>
+                                <input type="text" class="form-control" id="Maths_input">   
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="Science_input">science</label>
+                                <input type="text" class="form-control" id="Science_input">   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="History_input">history</label>
+                                <input type="text" class="form-control" id="History_input">   
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="Buddhism_input">Buddhism</label>
+                                <input type="text" class="form-control" id="Buddhism_input">   
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="English_input">english</label>
+                                <input type="text" class="form-control" id="English_input">   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="IT_input">it</label>
+                                <input type="text" class="form-control" id="IT_input">   
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="Commerce_input">Commerce</label>
+                                <input type="text" class="form-control" id="Commerce_input">   
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="btn-edit-close" >Close</button>
+                    <button type="button" class="btn btn-danger" id="btn-save-marks">Save changes</button>
+                </div>
+            </div>
+        </div>
+        </div>  
+    </footer>
 </div>
+
+
 
 <script src="<?php echo base_url() ?>assets/js/highchart/exporting.js"></script>
 <script src="<?php echo base_url() ?>assets/js/highchart/highcharts.js"></script>
@@ -451,8 +460,112 @@
 <script type="text/javascript">
 
     searched_student_index = '';
+    const subjects = ["Sinhala", "Maths", "Science", "History", "Buddhism", "English", "IT","Commerce"];
+
+    function modal_hide() {
+        subjects.map((e, i) => {
+            $("#"+subjects[i]+"_input").val('');
+        })
+
+        $('#exampleModalCenter').modal('hide');
+    }
 
     $('document').ready(function () {
+
+        $('#btn-edit-close').click(function(){
+            modal_hide();
+        });
+
+        $('#btn-save-marks').click(function(e){
+
+            selectGrade = $("#selectGrade").val();
+            selectClass = $("#selectClass").val();
+            selectTerm = $("#selectTerm").val();
+
+            const marks = subjects.map((elem, i) => {
+                return {
+                    sub: i+1,
+                    mark: $("#"+subjects[i]+"_input").val()
+                }
+            });
+
+            const data = {
+                'grade':  selectGrade,
+                'class': selectClass,
+                'index': searched_student_index,
+                'term': selectTerm,
+                'marks': marks
+            }
+
+            $.ajax({
+                type: "post",
+                url: "<?php echo site_url('student/updateMarks'); ?>",
+                cache: false,
+                data: data,
+                success : 
+                (res) => {
+                    let response = JSON.parse(res);
+                    if (response == 1) {
+                        modal_hide();
+                        alert("Update Successfully!!!");
+                    }else {
+                        modal_hide();
+                        alert("something went wrong!!!");
+                    }
+                },
+
+                error: 
+                function (error) {
+                    console.log(error);
+                }
+            });
+            
+        });
+
+
+        $("#btn-search-edit").click(function(e){
+            
+
+            selectGrade = $("#selectGrade").val();
+            selectClass = $("#selectClass").val();
+            selectTerm = $("#selectTerm").val();
+    
+            classIdObj = {
+                'grade':  selectGrade,
+                'class': selectClass,
+                'index': searched_student_index,
+                'term': selectTerm
+            }
+
+            
+
+            //get the class id 
+            $.ajax({
+                type: "post",
+                url: "<?php echo site_url('student/getStudentSubjectsMarks'); ?>",
+                cache: false,
+                data: classIdObj,
+                success : 
+                (res) => {
+                    let marks = JSON.parse(res);
+                    
+                    marks.map((obj) => {
+                        $("#"+subjects[obj.Subject_code-1]+"_input").val(obj.value);
+                    })
+                },
+
+                error: 
+                function (error) {
+                    console.log(error);
+                }
+            })
+        }); 
+
+        $('#editBtn').click(function(e){
+            // searched_student_index = $("#student_select").val();
+            
+        })
+        
 
         $("#viewBtn").click(function (e) {
 

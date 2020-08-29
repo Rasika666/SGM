@@ -4,7 +4,51 @@
 class Student extends CI_Controller
 {
 
+    public function getStudentSubjectsMarks(){
 
+        $grade = $this->input->post('grade');
+        $class = $this->input->post('class');
+        $index = $this->input->post('index');
+        $term = $this->input->post('term');
+     
+        //get the classid
+        $classId = $this->Class_model->getClassId($grade, $class);
+        // get student class id
+        $stuClassId = $this->Student_Class_model->getStudentClassID($classId, $index);
+
+        $marks = $this->Marks_model->getMark($stuClassId, $term);
+
+        echo json_encode($marks);
+        
+    }
+
+    public function updateMarks() {
+        $grade = $this->input->post('grade');
+        $class = $this->input->post('class');
+        $index = $this->input->post('index');
+        $term = $this->input->post('term');
+        $marks = $this->input->post('marks');
+
+        //get the classid
+        $classId = $this->Class_model->getClassId($grade, $class);
+        // get student class id
+        $stuClassId = $this->Student_Class_model->getStudentClassID($classId, $index);
+        $c = 0;
+        foreach ($marks as $mark) {
+            $res = $this->Marks_model->updateMarks($mark['mark'], $stuClassId, $mark['sub'], $term);
+
+            if ($res == 1) {
+                $c++;
+            }
+            
+        }
+        if ($c == 8) {
+            echo json_encode(1);
+        }else{
+            echo json_encode(0);
+        }
+        
+    }
     
     public function search()
     {
