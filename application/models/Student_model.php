@@ -82,6 +82,8 @@ class Student_model extends CI_Model
                         AND sc.Class_id = c.id AND c.id=$classId")
             ->result_array();
 
+        
+
         return $restult;
     }
 
@@ -94,6 +96,7 @@ class Student_model extends CI_Model
 
             'class.Teacher_incharge' => $id
         ]);
+        $this->db->order_by('id','DESC');
         $this->db->limit(1);
             /*->query("SELECT id from class where class.Teacher_incharge=$id")
             ->result_array();*/

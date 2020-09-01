@@ -22,7 +22,7 @@ function drawGraphWith1stInClass(subjects, terms, marks, class1stMarks) {
         }
         ;
 
-        console.log(class1stMarks);
+       
     } catch (e) {
         console.log(e);
     }
@@ -481,7 +481,7 @@ function drawCompareSubjectMarks(name1, name2, categories, marks1, marks2, subje
 
 function drawAvgMarksGraphsForAll(grades, subjects, series) {
 
-    console.log(series);
+    
     Highcharts.chart('marksChart', {
         title: {
             text: 'Average marks for each subject',

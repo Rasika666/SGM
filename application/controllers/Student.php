@@ -76,6 +76,8 @@ class Student extends CI_Controller
         $tc_id = $this->Student_model->getTeacher_s_Class_for_year($id);
         $result = $this->Student_model->getAllStudentOfClass($tc_id);
 
+        
+
         echo json_encode($result);
     }
 

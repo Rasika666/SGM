@@ -1337,4 +1337,6 @@ INSERT INTO marks ( Student_Class_id, Subject_code, term, value, grade) VALUES (
 INSERT INTO marks ( Student_Class_id, Subject_code, term, value, grade) VALUES ( 42, 8, '2', 75, 'A');
 INSERT INTO marks ( Student_Class_id, Subject_code, term, value, grade) VALUES ( 42, 8, '3', 18, 'F');
 
+INSERT INTO teacher_user ( username, password, Teacher_id) VALUES ('admin', 'admin', 1);
 
+INSERT INTO student_user ( username, password, Student_index) VALUES ('student', 'student', 13840);

@@ -763,6 +763,27 @@
         $("#cmp_student_subject_div").hide();
         $("#cmp_student_subject_avg_div").hide();
 
+        $.ajax({
+            type: 'post',
+            url: "<?php echo site_url('student/allStudentsForTeacher')?>",
+            data: 'id=' + id,
+
+            success: function (response) {
+
+                var obj = JSON.parse(response);
+
+                console.log(obj);   
+                
+                $.each(obj, function (index, element) {
+
+                    $("#student_select").append("<option value='" + element.index + "'>" + element.index + " : " + element.fname + " " + element.lname + "</option>");
+
+                });
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
 
         $.ajax({
             type: 'post',
@@ -943,25 +964,7 @@
         });
 
 
-        $.ajax({
-            type: 'post',
-            url: "<?php echo site_url('student/allStudentsForTeacher')?>",
-            data: 'id=' + id,
-
-            success: function (response) {
-
-
-                var obj = JSON.parse(response);
-                $.each(obj, function (index, element) {
-
-                    $("#student_select").append("<option value='" + element.index + "'>" + element.index + " : " + element.fname + " " + element.lname + "</option>");
-
-                });
-            },
-            error: function (error) {
-                console.log(error);
-            }
-        });
+        
         $.ajax({
             type: 'post',
             url: "<?php echo site_url('subject/subjectForClass')?>",
